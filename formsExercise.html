@@ -18,26 +18,26 @@
         </select>
         <fieldset>
             <legend>When you visited:</legend>
-            <label>
+            <label for="date">
                 Date Visited
-                <input type="date">
+                <input type="date" id="date">
             </label>
-            <label>
+            <label for="time">
                 Time
-                <input type="time">
+                <input type="time" id="time">
             </label>
         </fieldset>
-        <label>
+        <label for="first">
             First Name:
-            <input type="text" placeholder="John">
-        </label>
+            <input type="text" id="first" placeholder="John">
+        </label for="last">
         Last Name:
-        <input type="text" placeholder="Doe">
+        <input type="text" id="last" placeholder="Doe">
         </label>
         <br>
-        <label>
+        <label for="email">
             Email:
-            <input type="email" placeholder="your email">
+            <input type="email" id="email" placeholder="your email">
         </label>
         <br>
         <label for="male">Male</label>
@@ -49,21 +49,21 @@
         <br>
         <label for="experience">Tell us about your experience:</label>
         <br>
-        <textarea name="" id="" cols="30" rows="3"></textarea>
+        <textarea id="experience" cols="30" rows="3"></textarea>
         <br>
         <label for="visits">
             Times visited in the last month:
-            <input type="number" min="1" max="30">
+            <input id="visits" type="number" min="1" max="30">
         </label>
         <br>
-        <label for="checkboc">
+        <label for="checkbox">
             Please check the box if you would be willing to be contacted about your experience
-            <input type="checkbox">
+            <input id="checkbox" type="checkbox">
         </label>
         <br>
         <label for="password">
             Password
-            <input type="password" minlength="5" maxlength="10">
+            <input id="password" type="password" minlength="5" maxlength="10">
         </label>
         <br>
         <input type="reset">

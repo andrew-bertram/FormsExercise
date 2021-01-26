@@ -20,7 +20,7 @@
             <legend>When you visited:</legend>
             <label for="date">
                 Date Visited
-                <input type="date" id="date">
+                <input type="date" id="date" min="2021-01-01" max="2021-12-31">
             </label>
             <label for="time">
                 Time
@@ -63,7 +63,8 @@
         <br>
         <label for="password">
             Password
-            <input id="password" type="password" minlength="5" maxlength="10">
+            <input id="password" type="password" pattern=".{5,10}" required
+                title="Please enter a password that is 5 to 10 characters in length">
         </label>
         <br>
         <input type="reset">
